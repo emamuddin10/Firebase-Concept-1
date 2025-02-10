@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Outlet } from 'react-router-dom';
+import { authContext } from '../Root/Root';
 
 const About = () => {
+    const {handleGoogleLogin}=useContext(authContext)
     return (
         <div>
             This is about
-            <Outlet></Outlet>
+            <button onClick={handleGoogleLogin} className='btn'>Google Login</button>
+          
         </div>
     );
 };
