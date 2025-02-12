@@ -3,10 +3,11 @@ import { Outlet } from 'react-router-dom';
 import { authContext } from '../Root/Root';
 
 const About = () => {
-    const {handleGoogleLogin}=useContext(authContext)
+    const {handleGoogleLogin,user}=useContext(authContext)
     return (
         <div>
-            This is about
+            
+            {user?.displayName}
             <button onClick={handleGoogleLogin} className='btn'>Google Login</button>
           
         </div>
