@@ -25,7 +25,7 @@ const Login = () => {
                 <input type="password" name='password' className="input" placeholder="Password" />
                 
                 
-                <button className="btn btn-success mt-4">Loginn</button>
+                <button className="btn btn-success mt-4">Log in</button>
               </fieldset>
               <p>If you new this website please <button className='btn btn-info'><Link to='/signUp'>Sign Up</Link></button></p>
             </form>
